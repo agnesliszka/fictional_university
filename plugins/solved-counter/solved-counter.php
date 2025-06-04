@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Interactivity Quiz
+ * Plugin Name:       Solved Counter
  * Description:       An interactive block with the Interactivity API
  * Version:           0.1.0
  * Requires at least: 6.1
@@ -8,7 +8,7 @@
  * Author:            The WordPress Contributors
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       interactivity-quiz
+ * Text Domain:       solved-counter
  *
  * @package           create-block
  */
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_interactivity_quiz_block_init() {
+function create_block_solved_counter_block_init() {
 	register_block_type_from_metadata( __DIR__ . '/build' );
 }
-add_action( 'init', 'create_block_interactivity_quiz_block_init' );
+add_action( 'init', 'create_block_solved_counter_block_init' );
